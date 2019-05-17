@@ -2,9 +2,9 @@
   "daemon-url" :
   {
     "_comment" : "RPC urls to monero deamon",
-    "mainnet"  : "http://127.0.0.1:18081",
-    "testnet"  : "http://127.0.0.1:28081",
-    "stagenet" : "http://127.0.0.1:38081"
+    "mainnet"  : "http://127.0.0.1:19734",
+    "testnet"  : "http://127.0.0.1:29734",
+    "stagenet" : "http://127.0.0.1:39734"
   },
   "blockchain-path" :
   {
@@ -37,19 +37,19 @@
     "fee"     : 0,
     "testnet" :
     {
-      "address" : "9tzmPMTViHYM3z6NAgQni1Qm1Emzxy5hQFibPgWD3LVTAz91yok5Eni1pH6zKhBHzpTU15GZooPHSGHXFvFuXEdmEG2sWAZ",
-      "viewkey" : "ae6184287ca791609844f140b8502ccfa2223c04c8699cf31fcd0af1f1d0be08"
+      "address" : "Sumoo66mY881kB4bM5TJp1L28a7kkugUpEhdY91UycRiQV7hy3M7xQq3aaRZVPTRd2etUzMg1QJedZ38TtZrDj16afgB8mFmhZB",
+      "viewkey" : "062481920f6b11f1948def79e283ed7d25b57d62bf88f0bc80ec809dc947df58"
     },
     "mainnet" :
     {
       "_comment": "these are official monero project donation address and viewkey. change it to yours",
-      "address" : "44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A",
-      "viewkey" : "f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501"
+      "address" : "Sumoo66mY881kB4bM5TJp1L28a7kkugUpEhdY91UycRiQV7hy3M7xQq3aaRZVPTRd2etUzMg1QJedZ38TtZrDj16afgB8mFmhZB",
+      "viewkey" : "062481920f6b11f1948def79e283ed7d25b57d62bf88f0bc80ec809dc947df58"
     },
     "stagenet" :
     {
-      "address" : "53mqDDKtVkib8inMa41HuNJG4tj9CcaNKGr6EVSbvhWGJdpDQCiNNYBUNF1oDb8BczU5aD68d3HNKXaEsPq8cvbQE2FBkTS",
-      "viewkey" : "53c5850e895122574c53a4f952c726be3fe22bcd2b08f4bfed8946d887cc950b"
+      "address" : "Sumoo66mY881kB4bM5TJp1L28a7kkugUpEhdY91UycRiQV7hy3M7xQq3aaRZVPTRd2etUzMg1QJedZ38TtZrDj16afgB8mFmhZB",
+      "viewkey" : "062481920f6b11f1948def79e283ed7d25b57d62bf88f0bc80ec809dc947df58"
     }
   },
   "refresh_block_status_every_seconds" : 10,

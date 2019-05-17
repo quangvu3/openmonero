@@ -14,8 +14,8 @@ uint64_t
 TxUnlockChecker::get_v2height(network_type net_type) const
 {
     return net_type == TESTNET ?
-                624634 : net_type == STAGENET ?
-                   (uint64_t)-1 : 1009827;
+                1 : net_type == STAGENET ?
+                   (uint64_t)-1 : 1;
 }
 
 uint64_t
@@ -24,8 +24,8 @@ TxUnlockChecker::get_leeway(
         network_type net_type) const
 {
     return tx_block_height < get_v2height(net_type)
-            ? CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS_V1
-            : CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS_V2;
+            ? CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS
+            : CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS;
 }
 
 bool

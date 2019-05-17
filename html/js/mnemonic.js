@@ -17,6 +17,16 @@ function mn_get_checksum_index(words, prefix_len) {
     return index;
 }
 
+function mn_get_checksum_index2(words, wordset) {
+    var trimmed_words = "";
+    for (var i = 0; i < words.length; i++) {
+        trimmed_words += words[i].slice(0, wordset.prefix_len);
+    }
+    var checksum = crc32.run(trimmed_words);
+    var index = checksum % wordset.words.length;
+    return index;
+}
+
 function mn_encode(str, wordset_name) {
     'use strict';
     wordset_name = wordset_name || mn_default_wordset;
@@ -34,7 +44,7 @@ function mn_encode(str, wordset_name) {
         out = out.concat([wordset.words[w1], wordset.words[w2], wordset.words[w3]]);
     }
     if (wordset.prefix_len > 0) {
-        out.push(out[mn_get_checksum_index(out, wordset.prefix_len)]);
+       out.push(wordset.words[mn_get_checksum_index2(out, wordset)]);
     }
     return out.join(' ');
 }
